@@ -1,0 +1,16 @@
+header {
+  width: 800px;
+  margin: 0 auto;
+}
+header hgroup h1 {
+  color: red;
+}
+header hgroup h2 {
+  color: blue;
+}
+header nav ul {
+  overflow: hidden;
+}
+header nav li {
+  float: left;
+}

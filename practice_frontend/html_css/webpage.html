@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS3 Font Property</title>
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+        <style>
+            * {margin:0; padding: 0;}
+            body {font-family: 'Helvetica', sans-serif;}
+            li {list-style:none;}
+            a {text-decoration: none;}
+        </style>
+        <style>
+            #main_header {
+                height: 45px;
+                background: url('source/ch_6/header_background.png');
+
+                position: relative;
+                text-align: center;
+                line-height: 45px;
+            }
+            #main_header > h1 {
+                color: white;
+            }
+            #main_header > a, #main_header > label {
+                display: block;
+                height: 32px;
+                position: absolute;
+            }
+            #main_header > a.left {
+                width: 62px;
+                left: 5px; top: 7px;
+                background: url(source/ch_6/sprites.png);
+                background-position: 0px 0px;
+                text-indent: -99999px;
+            }
+            #main_header > label.right {
+                width: 32px;
+                right: 5px; top: 7px;
+                background: url(source/ch_6/sprites.png);
+                background-position: -62px 0px;
+                text-indent: -99999px;
+            }
+            #toggle {display: none;}
+            #toggle + #wrap > #toggle_gnb_wrap {display:none;}
+            #toggle:checked + #wrap > #toggle_gnb_wrap {display: block;}
+
+            #toggle_gnb_wrap {
+                background: #363636;
+                padding: 5px;
+            }
+
+            #toggle_gnb {
+                background: #FFFFFF;
+                padding: 5px;
+            }
+            #toggle_gnb > ul {overflow: hidden;}
+            #toggle_gnb > ul > li {
+                width: 80px; float: left;
+            }
+            #top_gnb {
+                overflow: hidden;
+                border-bottom: 1px solid black;
+                background: #B42111;
+            }
+            #top_gnb > div > a {
+                float: left;
+                width: 25%;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                color: white;
+            }
+            #bottom_gnb {
+                display: table;
+                width: 100%;
+                border-bottom: 1px solid black;
+            }
+            #bottom_gnb > div {
+                display: table-cell;
+                position: relative;
+            }
+            #bottom_gnb > div >a {
+                display: block;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+            }
+            #bottom_gnb > div > a::before{
+                display: block;
+                position: absolute;
+                top: 9px; left: -1px;
+                width: 1px; height: 15px;
+                border-left: 1px solid black;
+                content: '';
+            }
+            #section_header {padding:20px;}
+            #section_article {padding: 10px;}
+            #main_footer {
+                padding: 10px;
+                border-top: 3px solid black;
+                text-align: center;
+            }
+        </style>
+
+    </head>
+    <body>
+        <input id="toggle" type="checkbox" />
+        <div id="wrap">
+            <header id="main_header">
+                <a class="left" href="#">Main</a>
+                <h1>Mobile</h1>
+                <label class="right" for="toggle">Toggle</label>
+            </header>
+            <div id="toggle_gnb_wrap">
+                <div id="toggle_gnb">
+                    <ul>
+                        <li><a href="#">버튼</a></li>
+                        <li><a href="#">버튼</a></li>
+                        <li><a href="#">버튼</a></li>
+                        <li><a href="#">버튼</a></li>
+                        <li><a href="#">버튼</a></li>
+                        <li><a href="#">버튼</a></li>
+                        <li><a href="#">버튼</a></li>
+                        <li><a href="#">버튼</a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav id="top_gnb">
+                <div><a href="#">버튼</a></div>
+                <div><a href="#">버튼</a></div>
+                <div><a href="#">버튼</a></div>
+                <div><a href="#">버튼</a></div>
+            </nav>
+            <nav id="bottom_gnb">
+                <div><a href="#">버튼</a></div>
+                <div><a href="#">버튼</a></div>
+                <div><a href="#">버튼</a></div>
+                <div><a href="#">버튼</a></div>
+                <div><a href="#">버튼</a></div>
+            </nav>
+            <section id="main_section">
+                <header id="section_header">
+                    <h1>Lorem ipsum</h1>
+                    <time>2012-12-09 - Birthday</time>
+                </header>
+                <article id="section_article">
+                    <p>lorem ipsum blah blah blah blah blah blah blah</p>
+                    <br />
+                    <p>lorem ipsum blah blah blah blah blah blah blah</p>
+                    <br />
+                    <p>lorem ipsum blah blah blah blah blah blah blah</p>
+                    <br />
+                </article>
+            </section>
+            <footer id="main_footer">
+                <h3>HTML5 + CSS3 Basic</h3>
+                <address>Website Layout Basic</address>
+            </footer>
+        </div>
+    </body>
+</html>

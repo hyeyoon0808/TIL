@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            const myFunction = function (choice, number, manager, description) {
+                this.choice = choice;
+                this.number = number;
+                this.manager = manager;
+                this.description = description;
+            }
+            var buttons = document.querySelectorAll('.radio');
+            for(i=0; i<buttons.lengh; i++) {
+                buttons
+            }
+            myFunction.push(choice, number, manager, description) {
+                for(i=0; i<6; i++) {
+                    if(buttons[0].checked){
+                        document.getElementById("number").value = "p001";
+                        document.getElementById("manager").value = "pioni";
+                        document.getElementById("description").value = "전자 인사관리 시스템";
+                    }if(x[1].checked){
+                        document.getElementById("number").value = "p002";
+                        document.getElementById("manager").value = "pioni";
+                        document.getElementById("description").value = "도서관리 시스템";
+                    }if(x[2].checked){
+                        document.getElementById("number").value = "p003";
+                        document.getElementById("manager").value = "pioni";
+                        document.getElementById("description").value = "사이버 서비스 시스템";
+                    }if(x[3].checked){
+                        document.getElementById("number").value = "p004";
+                        document.getElementById("manager").value = "pioni";
+                        document.getElementById("description").value = "스마트카드 모바일 티머니 앱";
+                    }if(x[4].checked){
+                        document.getElementById("number").value = "p005";
+                        document.getElementById("manager").value = "pioni";
+                        document.getElementById("description").value = "모바일 쇼셜네트워크서비스 앱";
+                    }if(x[5].checked){
+                        document.getElementById("number").value = "p006";
+                        document.getElementById("manager").value = "pioni";
+                        document.getElementById("description").value = "안드로이드 게임 앱";
+                    }
+                    
+                }
+            }
+        </script>
+        <style type="text/css">
+            form {
+                border: 3px solid #f1f1f1;
+            }
+            #main {
+            width: 950px; 
+            margin: 0 auto;
+            height: 600px; 
+			text-align: center;
+			overflow: hidden;
+            }
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+
+            }
+            .center {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .tr {
+                font:bolder;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <form name="Form" id="main" action="/action_page.php" method="post">
+            <h2 id="title">프로젝트 안내</h2>
+            <table class="center"> 
+                <tr>
+                    <th>선택</th>
+                    <th>프로젝트명</th>
+                </tr>
+                <tr>
+                    <td><input type="radio" class="radio" id="c1" name="radio" value="c1"></td>
+                    <td>전자 인사관리 시스템</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" class="radio" id="c2" name="radio" value="c2"></td>
+                    <td>도서관리 시스템</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" class="radio" id="c3" name="radio" value="c3"></td>
+                    <td>사이버 서비스 시스템</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" class="radio" id="c4" name="radio" value="c4"></td>
+                    <td>스마트카드 모바일 티머니 앱</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" class="radio" id="c5" name="radio" value="c5"></td>
+                    <td>모바일 쇼셜네트워크서비스 앱</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" class="radio" id="c6" name="radio" value="c6"></td>
+                    <td>안드로이드 게임 앱</td>
+                </tr>
+            </table>
+            <br>
+            <label for="number">프로젝트 번호 </label>
+            <textarea id="number"></textarea>
+            <br>
+            <br>
+            <label for="manager">프로젝트 관리자 </label>
+            <textarea id="manager"></textarea>
+            <br>
+            <br>
+            <label for="description">프로젝트 설명 </label>
+            <textarea id="description"></textarea>
+            <br>
+
+        </form>
+    </body>
+</html> 

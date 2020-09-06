@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS3 Font Property</title>
+        <style>
+            .box {
+                width: 100px; height: 100px;
+                position: absolute;
+            }
+            .box:nth-child(1) {background-color: red;
+                    left:10px; top:10px; 
+                    z-index:100;}
+            .box:nth-child(2) {background-color: green;
+                    left:50PX; top:50px;
+                    z-index:10;}
+            .box:nth-child(3) {background-color: blue;
+                    left:90PX; top:90PX;
+                    z-index:1;}
+                    
+        </style>
+    </head>
+    <body>
+        <h1>It can be a creative title</h1>
+        <div>
+            <div class="box red"></div>
+            <div class="box green"></div>
+            <div class="box blue"></div>
+        </div>
+        <h1>let's say something nice so people can be brighter around you</h1>
+    </body>
+</html>

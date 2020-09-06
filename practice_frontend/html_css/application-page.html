@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chapter 7</title>
+        <meta name="viewport" content="width=device-width", initial-scale=1.0" />
+        <style>
+           * {margin: 0; padding: 0;}
+            body {font-family: 'Helvetica', sans-serif;}
+            li {list-style: none;}
+            a {text-decoration: none;}
+            #main_header {
+                height: 60px;
+                line-height: 60px;
+                padding-left: 10px;
+                border-bottom: 1px solid black;
+                background: #1D4088;
+                color: white;
+            }
+            #main_gnb {
+                overflow: hidden;
+                border-bottom: 1px solid black;
+                background: #32394A;
+            }
+            #main_gnb > ul.left {
+                overflow: hidden;
+                float: left;
+            }
+            #main_gnb > ul.right {
+                overflow: hidden;
+                float: right;
+            }
+            #main_gnb > ul.left > li {float: left;}
+            #main_gnb > ul.right > li {float: left;}
+            #main_gnb a {
+                display: block;
+                padding: 10px 20px;
+                border-left: 1px solid #5F6673;
+                border-right: 1px solid #242A37;
+                color: white;
+                font-weight: bold;
+            }
+            body {min-width: 760px;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="main_header">
+            <h1>Fluid</h1>
+        </header>
+        <nav id="main_gnb">
+            <ul class="left">
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+            </ul>
+        </nav>
+        <div id="wrap">
+            <ul class="main_lnb">
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+            </ul>
+            <div class="content_wrap">
+                <div id="content">
+                    <article>
+                        <h1>heewiejij</h1>
+                        <p>kldjfsja kadjfl aweij  klfadjalkfdjsfkajfidjoajewfeifj</p>
+                        <p>kldjfsja kadjfl aweij  klfadjalkfdjsfkajfidjoajewfeifj</p>
+                    </article>
+                    <article>
+                        <h1>heewiejij</h1>
+                        <p>kldjfsja kadjfl aweij  klfadjalkfdjsfkajfidjoajewfeifj</p>
+                        <p>kldjfsja kadjfl aweij  klfadjalkfdjsfkajfidjoajewfeifj</p>
+                    </article>
+                    <article>
+                        <h1>heewiejij</h1>
+                        <p>kldjfsja kadjfl aweij  klfadjalkfdjsfkajfidjoajewfeifj</p>
+                        <p>kldjfsja kadjfl aweij  klfadjalkfdjsfkajfidjoajewfeifj</p>
+                    </article>
+                    <article>
+                        <h1>heewiejij</h1>
+                        <p>kldjfsja kadjfl aweij  klfadjalkfdjsfkajfidjoajewfeifj</p>
+                        <p>kldjfsja kadjfl aweij  klfadjalkfdjsfkajfidjoajewfeifj</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
