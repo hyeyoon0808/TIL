@@ -150,3 +150,14 @@ DL (Dependency Lookup) : 의존성 찾기
    2. MyBatis-Spring - SqlSessionFactoryBean, SqlSessionTemplate 어떤 역할이고 무엇인지?
    3. MyBatis의 구조
 
+
+
+9/10 숙제
+
+* Servlet 과 JSP 무엇이고, 어떤 역할을 하는지?
+* MVC (Model View Controller)패턴
+* Model 1 Architecture 와 Model 2 Architecture의 차이점
+* Servlet 클래스를 web.xml 설정하는 방법.
+* JSP Tag 어떤것들이 있는지
+* JSTL(Java Standard Tag Library)란 무엇인지
+
