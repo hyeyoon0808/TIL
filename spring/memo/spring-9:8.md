@@ -138,26 +138,3 @@ DL (Dependency Lookup) : 의존성 찾기
 
 
 
-내일 할 내용
-
-1. Spring Test 이용해서 TestCase작성
-2. DI을 구현하는 방식
-   1. XML에 설정하는 방식
-   2. Annotation + xml 설정을 사용해서 설정하는 방식
-   3. Java Config 를 사용해서 설정하는 방식 (Spring Boot, No xml)
-3. MyBatis
-   1. MyBatis -SqlSessionFactory SqlSession
-   2. MyBatis-Spring - SqlSessionFactoryBean, SqlSessionTemplate 어떤 역할이고 무엇인지?
-   3. MyBatis의 구조
-
-
-
-9/10 숙제
-
-* Servlet 과 JSP 무엇이고, 어떤 역할을 하는지?
-* MVC (Model View Controller)패턴
-* Model 1 Architecture 와 Model 2 Architecture의 차이점
-* Servlet 클래스를 web.xml 설정하는 방법.
-* JSP Tag 어떤것들이 있는지
-* JSTL(Java Standard Tag Library)란 무엇인지
-
