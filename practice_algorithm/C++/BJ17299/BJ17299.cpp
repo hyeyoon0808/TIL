@@ -7,6 +7,7 @@ using namespace std;
 int main()
 {
     int n;
+    int cnt[100000];
     vector<int> a(n);
     vector<int> ans(n);
     stack<int> st;
@@ -16,6 +17,7 @@ int main()
     for (int i = 0; i < n; i++)
     {
         cin >> a[i];
+        cnt[a[i]]++;
     }
     st.push(0);
     for (int i = 1; i < n; i++)
@@ -24,7 +26,7 @@ int main()
         {
             st.push(i);
         }
-        while (!st.empty() && a[st.top()] < a[i])
+        while (!st.empty() && cnt[st.top()] < cnt[i])
         {
             ans[st.top()] = a[i];
             st.pop();
