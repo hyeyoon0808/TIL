@@ -76,3 +76,10 @@ console.log(sayHello2('람다'));
 - 클래스, 매소드 위에 사용 가능
 @GetMapping	- Get 요청을 처리 할 매소드를 매핑
 - @RequestBody와 같은 역할이지만 매소드 위에만 사용 가능
+
+
+
+
+
+
+
