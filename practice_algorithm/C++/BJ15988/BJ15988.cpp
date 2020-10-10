@@ -1,7 +1,40 @@
-#include <iostream>
 
-using namespace std;
+// 숫자 N을 1, 2, 3의 합으로 나타내는 방법의 수를 구해야 한다. BOJ 9095번 '1, 2, 3 더하기'에서 범위가 확장된 문제다.
+
+// D[N] = D[N-1]+D[N-2]+D[N-3]
+// D[N] : 숫자 N을 1, 2, 3의 합으로 나타내는 방법의 수
+// D[1] = 1
+// D[2] = 2 (1+1, 2)
+// D[3] = 4 (1+1+1, 1+2, 2+1, 3)
+// D[N-1] : 마지막에 1을 더한 방법의 수
+// D[N-2] : 마지막에 2를 더한 방법의 수
+// D[N-3] : 마지막에 3을 더한 방법의 수
+
+#include <cstdio>
+
+int n;
+long long d[1000001];
+
+void solve()
+{
+    d[1] = 1, d[2] = 2, d[3] = 4;
+    for (int i = 4; i < 1000001; i++)
+    {
+        d[i] = d[i - 1] + d[i - 2] + d[i - 3];
+        d[i] %= 1000000009;
+    }
+}
 
 int main()
 {
+    int t;
+    scanf("%d", &t);
+    solve();
+    while (t--)
+    {
+        int n;
+        scanf("%d", &n);
+        printf("%lld\n", d[n]);
+    }
+    return 0;
 }
