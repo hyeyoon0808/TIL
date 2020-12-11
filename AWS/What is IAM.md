@@ -34,3 +34,5 @@
 #### Policies
 
 - policies are made up of documents, which are called policy documents. These documents are formatted in JavaScript Object Notation (JSON) and procide permissions for users, groups, and roles.
+
+** you can geneate and download a credential report that lists all users in your account. => passwords, access keys, MFA
