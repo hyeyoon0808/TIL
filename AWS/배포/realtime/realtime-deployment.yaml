@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: realtime-backend
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: realtime-backend
+  template:
+    metadata:
+      labels:
+        app: realtime-backend
+    spec:
+      containers:
+        - name: realtime-backend
+          image: seeker1207/mynode
+          ports:
+            - containerPort: 8000

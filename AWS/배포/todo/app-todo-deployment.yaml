@@ -1,0 +1,35 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: spring-todo-service
+  annotations:
+    alb.ingress.kubernetes.io/healthcheck-path: "/"
+spec:
+  type: NodePort
+  ports:
+    - port: 8090
+      targetPort: 8090
+      protocol: TCP
+      name: server-port
+  selector:
+    app: spring-todo
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-todo-deployment
+spec:
+  selector:
+    matchLabels:
+      app: spring-todo
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: spring-todo
+    spec:
+      containers:
+        - name: spring-todo
+          image: kyungju620/real-todo-service:v2
+          ports:
+            - containerPort: 8090

@@ -1,0 +1,54 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: "spring-server-ingress"
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/target-group-attributes: stickiness.enabled=true,stickiness.lb_cookie.duration_seconds=60
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /auth/*
+            backend:
+              serviceName: "spring-oauth-service"
+              servicePort: 8080
+          - path: /oauth2*
+            backend:
+              serviceName: "spring-oauth-service"
+              servicePort: 8080
+          - path: /user/*
+            backend:
+              serviceName: "spring-oauth-service"
+              servicePort: 8080
+          - path: /todo*
+            backend:
+              serviceName: "spring-todo-service"
+              servicePort: 8090
+          - path: /todo-oneday*
+            backend:
+              serviceName: "spring-todo-service"
+              servicePort: 8090
+          - path: /point-grade*
+            backend:
+              serviceName: "spring-point-service"
+              servicePort: 8100
+          - path: /rooms*
+            backend:
+              serviceName: "realtime-backend"
+              servicePort: 9000
+          - path: /socket.io/*
+            backend:
+              serviceName: "realtime-backend"
+              servicePort: 9000
+          - path: /*
+            backend:
+              serviceName: "frontend"
+              servicePort: 80
+          - path: /oauth/*
+            backend:
+              serviceName: "frontend"
+              servicePort: 80
