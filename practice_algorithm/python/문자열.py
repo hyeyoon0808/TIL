@@ -47,3 +47,5 @@ print("I am {age}, I like {color}".format(age=20, color="red"))
 # age = 20
 # color = "빨간"
 # print(f"I am {age}, I like {color}.") #f써준 경우 앞의 변수 사용할수 있음
+
+#탈출문자 1.09.26
