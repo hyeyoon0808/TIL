@@ -1,5 +1,13 @@
 # Python
 
+
+
+## Python 원리
+
+- 
+
+
+
 ## 기본 문법 정리
 
 - [파이썬 기본 자료형/변수](https://github.com/hyeyoon0808/TIL/blob/master/practice_algorithm/python/practice.py)

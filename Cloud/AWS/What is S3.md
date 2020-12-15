@@ -28,7 +28,8 @@
 
 - Read after Write consistency for PUTS of new Objects
 - Eventual Consistency for overwrite PUTS and DELETES(can take some time to propagate)
-  - 
+
+
 
 
 
