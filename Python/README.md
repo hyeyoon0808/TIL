@@ -4,7 +4,9 @@
 
 ## Python 원리
 
-- 
+- [기본 원리](https://github.com/hyeyoon0808/TIL/blob/master/Python/Python-logic.md)
+- [Compiler vs Interpreter](https://github.com/hyeyoon0808/TIL/blob/master/Python/compiler-interpreter.md)
+- [JIT Compiler](https://github.com/hyeyoon0808/TIL/blob/master/Python/JIT-Compiler.md)
 
 
 
