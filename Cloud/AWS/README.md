@@ -2,7 +2,7 @@
 
 ## 기본 개념 정리
 
-- [IAM](https://github.com/hyeyoon0808/TIL/blob/master/AWS/What%20is%20IAM.md)
+- [IAM](https://github.com/hyeyoon0808/TIL/blob/master/Cloud/AWS/What%20is%20IAM.md)
 - [S3](https://github.com/hyeyoon0808/TIL/blob/master/AWS/What%20is%20S3.md)
 
 ## StudyOn 배포 기록
