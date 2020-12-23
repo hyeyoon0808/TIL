@@ -76,7 +76,7 @@
 ![엣지컴퓨팅-02](https://img.kr.news.samsung.com/kr/wp-content/uploads/2017/05/%EC%97%A3%EC%A7%80%EC%BB%B4%ED%93%A8%ED%8C%85-02.jpg)
 
 - ex) IoT (사물 인터넷), 5G, Smart city, Rola, 자율주행
-  - 중앙화 X
+  - 중앙화 안함!!
   - 중앙 Compute로 바로 가지않고 edge에서 모든 처리
     - 더욱 빠른 서버
     - 로컬에서 시스템화
