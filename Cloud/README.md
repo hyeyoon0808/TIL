@@ -4,6 +4,7 @@
 
 ## 기본 개념 정리
 
+- [컴퓨팅 역사](https://github.com/hyeyoon0808/TIL/blob/master/Cloud/Computing_History.md)
 - [가상화와 클라우드](https://github.com/hyeyoon0808/TIL/blob/master/Cloud/virtualization-cloud.md)
 
 
