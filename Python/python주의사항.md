@@ -46,3 +46,57 @@ for _ in range(5):
 
 .
 
+### 4. 함수와 람다 표현식
+
+#### 함수
+
+함수안에서 전역변수를 가져와 사용할때 global로 지정해줘야한다.
+
+```python
+a=10 #전역변수
+def func():
+  # global로 지정해줌으로써 바깥 a값 인식하여 더해줌
+  # 없으면 0부터 시작
+  global a
+  a += 1 #지역변수
+  print(A)
+ 
+```
+
+.
+
+파이썬은 리턴을 한번에 반환 가능!!! = packing
+
+```python
+def operator(a, b):
+  add_var = a+b
+  subtract_var = a-b
+  multiply_var = a*b
+  divide_var = a/b
+  return add_var, subtract_var, multiply_var, divide_var #한번에 반환 가능!!!
+
+a, b, c, d = operator(7, 3)
+print(a, b, c, d)
+```
+
+.
+
+#### 람다 표현식
+
+특정한 기능을 수행하는 함수를 한 줄에 작성할 수 있다는 점이 특징
+
+- 유용하게 쓰이는 경우: 어떤 함수 자체를 받는 또 다른 함수가 있을때 유용하게 쓰임, 단순히 한번 사용하고 말 함수 같은 경우
+
+```python
+array = [('hong', 50), ('cho', 10), ('Koo', 74)]
+def my_key(x):
+  return x[1] #2번째 원소
+
+print(sorted(array, key=my_key)) #정렬기준: key속성
+print(sorted(array, key=lambda x: x[1])) #일회용 함수는 람다로 함수 구현
+```
+
+> 결과 => [('hong', 50), ('cho', 10), ('Koo', 74)]
+>
+> ​			[('hong', 50), ('cho', 10), ('Koo', 74)]
+
