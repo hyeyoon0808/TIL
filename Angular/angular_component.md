@@ -6,6 +6,8 @@
 
 ## Angular 컴포넌트
 
+**화면을 구성하면서 각종 데이터 처리**
+
 - private: 다른 곳에서 사용 못하고 오직 해당 클래스에서만 사용
 - protected: 해당 클래스와 직접적으로 관계된 곳에서만 사용 => **앵귤러의 클래스의 접근 제어 기본 값**
 - public: 누구든지 사용 가능
@@ -79,8 +81,27 @@ export class MyCustomComponent{
 ### 앵귤러 기능
 
 1. 앵귤러의 표현식 
+
    - {{}}
    - 양반향 데이터 바인딩
+
 2. 클릭 기능
-   - 소괄호에 click으로 기능 사용
+
+   - 소괄호에 click으로 기능 사용 => (click)
+     - 앵귤러에서 소괄호의 의미는 해당 컴포넌트에게 이벤트 또는 데이터를 전달하는 의미
+
+   ```html
+   <button (click)='clickAfterPrint()'>{{title}}<-당신이 입력한 변수 title</button>
+   ```
+
 3. 구조 지시자 (디렉티브)
+   - html 태그 안에서 *기호옆에 명령어를 붙여준 뒤, 대입 연산자를 통해 동작할 명령어를 입력
+
+```php+HTML
+<div *ngFor="let item of showArray">{{item}}</div>
+```
+
+​	- *ngFor
+
+​		: for loop과 같이 showArray에 있는 item 원소들 받기
+
