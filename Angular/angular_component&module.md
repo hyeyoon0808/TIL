@@ -88,3 +88,41 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 > 4. **모듈에서 가장 먼저 동작하는 컴포넌트는 bootstrap에 등록.**
 > 5. **자신이 만든 컴포넌트를 추가/동작하려면, 해당 컴포넌트의 셀렉터의 내용을 html 태그 형식으로 bootstrap에서 사용된 컴포넌트에 추가**
 
+
+
+------
+
+## Angular module.ts
+
+```typescript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms'; //  
+import { AppComponent } from './app.component';
+import { HelloComponent } from './hello/hello.component';
+import { WorldComponent } from './world/world.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HelloComponent,
+    WorldComponent
+  ],
+  imports: [
+    BrowserModule, FormsModule  //등록..?
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+
+- FormsModule에서 주로 사용되는 ngModel 디렉티브는 데이터를 input 형식의 테그에 묶어줄 때 사용
+  - input 형식의 테그의 데이터를 손쉽게 관리하는 개념
+
+
+
+
+
+
+
