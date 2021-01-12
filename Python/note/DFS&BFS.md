@@ -84,6 +84,22 @@ recursive_function(1)
   - ex) 각 정점에 숫자가 적혀있고 a부터 b까지 가는 경로를 구하는데 경로에 같은 숫자가 있으면 안 된다는 문제 등, 각각의 경로마다 특징을 저장해둬야 할 때
   - 검색 대상 그래프가 정말 크다면 DFS
 
+```python
+def bfs(graph, start_node):
+  visit = list() # 방문했던 노드 목록
+  queue = list() # 방문할 노드 목록
+  
+  queue.append(start_node) # 큐의 목록이 바닥날때까지 loop를 돌려준다.
+  
+  while queue: # 큐의 목록 바닥날때까지(더 이상 방문할 노드가 없을 때까지)loop를 돌림
+    node = queue.pop(0) # 큐의 맨 앞에 있는 노드 꺼냄
+    if node not in visit: # 해당 노드가 아직 방문 리스트에 없다면
+      visit.append(node) # 방문리스트 추가
+      queue.extend(graph[node]) # 해당 노드의 자식 노드들 큐에 추가
+      
+  return visit
+```
+
 
 
 ## BFS(Breadth-first search)
@@ -97,6 +113,27 @@ recursive_function(1)
 - 최단거리 구하는 문제
   - ex) 미로찾기 등 최단거리를 구해야 할 경우
   - 검색 대상의 규모가 크지 않고, 검색 시작 지점으로부터 원하는 대상이 별로 멀지 않다면 BFS
+
+```python
+def bfs(graph, start_node):
+  visit = list() # 방문했던 노드 목록
+  stack = list() # 방문할 노드 목록
+  
+  stack.append(start_node) # stack의 목록이 바닥날때까지 loop를 돌려준다.
+  
+  while stack: # stack의 목록 바닥날때까지(방문할 노드가 없을 때까지)loop를 돌림
+    node = stack.pop() # stack의 맨 앞에 있는 노드 꺼냄
+    if node not in visit: # 해당 노드가 아직 방문 리스트에 없다면
+      visit.append(node) # 방문 리스트 추가
+      stack.extend(graph[node]) # 해당 노드의 자식 노드들 큐에 추가
+      
+  return visit
+```
+
+- queue에서 stack으로 바뀜
+- pop(0)을 하던 부분이 pop()으로 바뀜.
+  - pop(0): 맨 앞에 있는 요소 가져옴 - **queue**
+  - pop(): 맨 마지막에 있는 요소 가져옴. - **stack**
 
 
 
