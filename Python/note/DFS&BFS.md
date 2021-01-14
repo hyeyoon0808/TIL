@@ -100,6 +100,26 @@ def bfs(graph, start_node):
   return visit
 ```
 
+```python
+from queue import Queue
+def bfs(graph, start_node):
+  visit = set() # 방문했던 노드 목록 - list보단 set or dictionary
+  q = Queue() # 방문할 노드 목록
+  
+  q.put(start_node) # 큐의 목록이 바닥날때까지 loop를 돌려준다.
+  
+  while q.size() > 0: # 큐의 목록 바닥날때까지(방문할 노드가 없을 때까지)loop를 돌림
+    #node = q.pop(0) # 큐의 맨 앞에 있는 노드 꺼냄
+    node = q.get() # pop(0)보다 시간복잡도 낮음
+    if node not in visit: # 해당 노드가 아직 방문 리스트에 없다면
+      #visit.append(node) # 방문리스트 추가
+      visit.add(node)
+      for nextNode in graph[node]:
+        q.put(nextNode)# 해당 노드의 자식 노드들 큐에 추가
+      
+  return visit
+```
+
 
 
 ## BFS(Breadth-first search)
