@@ -21,3 +21,10 @@
 - Amazon ECS  (Elastic Container Service)
   - 완전관리형 컨테이너 오케스트레이션 서비스
   -  컨테이너를 위한 서버리스 컴퓨팅인 [AWS Fargate](https://aws.amazon.com/ko/fargate/)를 사용하여 ECS 클러스터를 실행
+- Elastic Beanstalk
+  - Java, .NET, PHP, Node.js, Python, Ruby, Go, Docker를 사용하여 Apache, Nginx, Passenger, IIS와 같은 친숙한 서버에서 개발된 웹 애플리케이션 및 서비스를 간편하게 배포하고 조정할 수 있는 서비스입니다.
+- AWS Cloudtrail
+  - AWS 계정의 거버넌스, 규정 준수, 운영 감사, 위험 감사를 지원하는 서비스입니다. CloudTrail을 사용하면 AWS 인프라에서 계정 활동과 관련된 작업을 기록하고 지속적으로 모니터링하며 보관할 수 있습니다. 
+- AWS snowball
+  -  [AWS Snow 패밀리](https://aws.amazon.com/ko/snow/)의 일부로, 두 가지 옵션으로 제공되는 엣지 컴퓨팅, 데이터 마이그레이션 및 엣지 스토리지 디바이스입니다.
+  - 로컬 스토리지 및 대규모 데이터 전송에 적합합니다.
