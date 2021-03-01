@@ -1,7 +1,5 @@
 이 글은 Openstack 공식 문서를 참고해 에러 핸들링을 조사한 것을 바탕으로 정리하였습니다.
 
- 
-
 API 요청이 잘못되거나 처리 도중 오류가 발생하면 Error 정보를 응답으로 반환합니다. 오류 발생 시 HTTP Response Code 도 해당 값이 돌아오며, Error 정보는 오류 코드 <errorcode> 와 오류 텍스트 <message>로 구성되어 있습니다.
 
  
@@ -12,7 +10,7 @@ Openstack의 에러 핸들링에서 주의할 점은 에러 JSON 형식이 서�
 
  
 
-## Error Code 목록
+## Error Code List
 
 아래는 대표적으로 horizon, keystone exception 문서와 openstack error 핸들링 공식 문서를 참고로 작성한 목록입니다.
 
