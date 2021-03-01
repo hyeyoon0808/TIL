@@ -56,7 +56,7 @@ Openstack의 에러 핸들링에서 주의할 점은 에러 JSON 형식이 서�
 
  
 
-## 에러 JSON 예시
+## Error JSON Example
 
 아래는 문서에서 예시로 제시한 에러 JSON 형식입니다. 하지만 문서에서도 언급했듯이 openstack의 각각의 서비스들은 밑의 예시와 같이 JSON 형식을 따르지 않고 다른 형식을 따릅니다. 이와 관련된 내용은 [openstack wiki](https://wiki.openstack.org/wiki/API_Special_Interest_Group/Current_Design/Errors#Analysis)에도 언급되었습니다.
 
