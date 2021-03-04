@@ -53,3 +53,5 @@
 - Amazon DynamoDB
   - Amazon DynamoDB는 어떤 규모에서도 10밀리초 미만의 성능을 제공하는 키-값 및 문서 데이터베이스입니다. 완전관리형의 내구성이 뛰어난 다중 리전, 다중 활성 데이터베이스로서, 인터넷 규모 애플리케이션을 위한 보안, 백업 및 복원, 인 메모리 캐싱 기능을 기본적으로 제공합니다. 
 
+- WebSocket API
+  - API Gateway에서 AWS 서비스(예: Lambda 또는 DynamoDB) 또는 HTTP 엔드포인트에 대한 상태 저장 프론트엔드로 WebSocket API를 만들 수 있습니다. WebSocket API는 클라이언트 애플리케이션에서 수신한 메시지의 내용을 기반으로 백엔드를 호출합니다.
