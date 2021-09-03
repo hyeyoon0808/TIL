@@ -2,7 +2,7 @@
 Logback은 Log4j를 토대로 새롭게 만든 라이브러리입니다. 
 Logback을 사용하여 Log를 커스텀하고 레벨 관리를 할 수 있는 방법을 알아보겠습니다.
  
-로그를 위한 라이브러리는 Logback 뿐만 아니라 Log4J 등이 있습니다. 이 다양한 라이브러리를 같은 방법으로 사용할 수 있도록 도와주는 facade pattern인 SLF4J를 사용하여 해당 블로그에서는 로그를 표현할 것입니다.
+- 로그를 위한 라이브러리는 Logback 뿐만 아니라 Log4J 등이 있습니다. 이 다양한 라이브러리를 같은 방법으로 사용할 수 있도록 도와주는 facade pattern인 SLF4J를 사용하여 해당 블로그에서는 로그를 표현할 것입니다.
  
 Spring-boot를 사용하기에 logback-spring.xml을 사용합니다.
 <configuration debug="true" scan="true" scanPeriod="5 seconds">
