@@ -31,7 +31,7 @@ level: 패키지에 해당하는 log level
 pattern은 sharset에 대한 log 패턴을 정의합니다.
  
  
-설정 예시
+[설정 예시]
 scanPeriod = “5 seconds”
 name = “com.innogrid.openstackit.configure.log” 
 level= “INFO”
